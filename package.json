@@ -1,0 +1,26 @@
+{
+  "name": "eslint-plugin-noob",
+  "version": "0.1.0",
+  "description": "Catch mistakes literally no developer should be making.",
+  "main": "index.js",
+  "scripts": {
+    "test": "best -I test.js -v"
+  },
+  "keywords": [
+     "eslint",
+     "basic",
+     "mistakes",
+     "noob",
+     "newbie",
+     "newb",
+     "simple",
+     "bad",
+     "practices"
+  ],
+  "author": "Josh Junon <josh@junon.me>",
+  "license": "MIT",
+  "devDependencies": {
+    "@zeit/best": "^0.6.1",
+    "eslint": "^6.0.1"
+  }
+}
