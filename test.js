@@ -69,7 +69,8 @@ rule('no-condexpr-statements', {
 		`foo()`,
 		`if (foo) bar();`,
 		`if (foo) bar(); else qux();`,
-		`const a = foo || bar;`
+		`const a = foo || bar;`,
+		`() => foo && bar()`
 	],
 	invalid: [
 		`foo && bar();`,
