@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-wtf",
   "version": "0.1.4",
-  "description": "Catch mistakes literally no developer should be making",
+  "description": "Catch ridiculous code that should never hit master",
   "main": "index.js",
   "scripts": {
     "test": "best -I test.js -v"
