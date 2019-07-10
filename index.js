@@ -1,10 +1,8 @@
-// eslint-plugin-noob
-
 module.exports = {
 	rules: {},
 	configs: {
 		strict: {
-			plugins: ['noob'],
+			plugins: ['wtf'],
 			rules: {}
 		}
 	}
@@ -14,5 +12,5 @@ module.exports = {
 	'no-single-element-literal-array-includes'
 ].forEach(name => {
 	module.exports.rules[name] = require(`./lib/${name}`);
-	module.exports.configs.strict.rules[`noob/${name}`] = 'error';
+	module.exports.configs.strict.rules[`wtf/${name}`] = 'error';
 });

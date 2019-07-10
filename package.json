@@ -1,7 +1,7 @@
 {
-  "name": "eslint-plugin-noob",
+  "name": "eslint-plugin-wtf",
   "version": "0.1.2",
-  "description": "Catch mistakes literally no developer should be making.",
+  "description": "Catch mistakes literally no developer should be making",
   "main": "index.js",
   "scripts": {
     "test": "best -I test.js -v"
@@ -10,6 +10,7 @@
      "eslint",
      "basic",
      "mistakes",
+     "wtf",
      "noob",
      "newbie",
      "newb",
