@@ -6,6 +6,10 @@
   "scripts": {
     "test": "best -I test.js -v"
   },
+  "files": [
+    "index.js",
+    "lib"
+  ],
   "keywords": [
     "eslint",
     "basic",
