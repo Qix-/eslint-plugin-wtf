@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-noob",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Catch mistakes literally no developer should be making.",
   "main": "index.js",
   "scripts": {
