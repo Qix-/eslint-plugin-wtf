@@ -7,16 +7,16 @@
     "test": "best -I test.js -v"
   },
   "keywords": [
-     "eslint",
-     "basic",
-     "mistakes",
-     "wtf",
-     "noob",
-     "newbie",
-     "newb",
-     "simple",
-     "bad",
-     "practices"
+    "eslint",
+    "basic",
+    "mistakes",
+    "wtf",
+    "noob",
+    "newbie",
+    "newb",
+    "simple",
+    "bad",
+    "practices"
   ],
   "author": "Josh Junon <josh@junon.me>",
   "license": "MIT",
