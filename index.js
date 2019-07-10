@@ -14,5 +14,5 @@ module.exports = {
 	'no-single-element-literal-array-includes'
 ].forEach(name => {
 	module.exports.rules[name] = require(`./lib/${name}`);
-	module.exports.configs.strict.rules[name] = 'error';
+	module.exports.configs.strict.rules[`noob/${name}`] = 'error';
 });
