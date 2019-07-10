@@ -2,11 +2,13 @@ const {Linter} = require('eslint');
 
 function rule(name, spec) {
 	const linter = new Linter();
+
 	linter.defineRule(name, {
 		create: require(`./lib/${name}`)
 	});
 
 	const lintOpts = spec.opts || {
+		parserOptions: { ecmaVersion: 2015 },
 		rules: {[name]: 'error'}
 	};
 
@@ -59,5 +61,21 @@ rule('no-single-element-literal-array-includes', {
 	],
 	invalid: [
 		`['foo'].includes('foo')`
+	]
+});
+
+rule('no-condexpr-statements', {
+	valid: [
+		`foo()`,
+		`if (foo) bar();`,
+		`if (foo) bar(); else qux();`,
+		`const a = foo || bar;`
+	],
+	invalid: [
+		`foo && bar();`,
+		`foo || bar();`,
+		`foo && bar && (a = 10);`,
+		`foo ? bar() : (a = 10);`,
+		`true ? bar() : null`
 	]
 });
