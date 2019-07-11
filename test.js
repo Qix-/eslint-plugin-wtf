@@ -80,3 +80,24 @@ rule('no-condexpr-statements', {
 		`true ? bar() : null`
 	]
 });
+
+rule('no-useless-templates', {
+	valid: [
+		'``',
+		'`foo`',
+		'foo`${bar}`',
+		'`foo${bar}`',
+		'` ${bar}`',
+		'`${bar} `',
+		'`${bar}${bar}`'
+	],
+	invalid: [
+		'`${foo}`',
+		'`${{}}`',
+		'`${(0)}`',
+		'`${null}`',
+		'`${1234}`',
+		'`${(a + 10 - 16).valueOf().toString()}`',
+		'`foo ${`${foo}`}`'
+	]
+});

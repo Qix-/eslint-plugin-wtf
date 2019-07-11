@@ -10,7 +10,8 @@ module.exports = {
 
 [
 	'no-single-element-literal-array-includes',
-	'no-condexpr-statements'
+	'no-condexpr-statements',
+	'no-useless-templates'
 ].forEach(name => {
 	module.exports.rules[name] = require(`./lib/${name}`);
 	module.exports.configs.strict.rules[`wtf/${name}`] = 'error';
