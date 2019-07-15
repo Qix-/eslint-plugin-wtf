@@ -101,3 +101,17 @@ rule('no-useless-templates', {
 		'`foo ${`${foo}`}`'
 	]
 });
+
+rule('no-empty-if-clause', {
+	valid: [
+		`if (foo) { bar(); }`,
+		`if (foo) { a(); } else { b(); }`
+	],
+	invalid: [
+		`if (foo);`,
+		`if (foo) {}`,
+		`if (foo) {} else {}`,
+		`if (foo) {} else { bar(); }`,
+		`if (foo && bar) { /* some comment */ }`
+	]
+});
