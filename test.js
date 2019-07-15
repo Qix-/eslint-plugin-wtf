@@ -109,7 +109,8 @@ rule('no-empty-if-clause', {
 		`if (foo) bar();`,
 		`if (foo) bar(); else qux();`,
 		`if (foo) bar(); else { qux(); }`,
-		`if (foo) {bar();} else qux();`
+		`if (foo) {bar();} else qux();`,
+		`() => { if (foo) return 10; else return foo(); }`
 	],
 	invalid: [
 		`if (foo);`,
