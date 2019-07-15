@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-wtf",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Catch ridiculous code that should never hit master",
   "repository": "qix-/eslint-plugin-wtf",
   "main": "index.js",
