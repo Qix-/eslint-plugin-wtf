@@ -107,7 +107,9 @@ rule('no-empty-if-clause', {
 		`if (foo) { bar(); }`,
 		`if (foo) { a(); } else { b(); }`,
 		`if (foo) bar();`,
-		`if (foo) bar(); else qux();`
+		`if (foo) bar(); else qux();`,
+		`if (foo) bar(); else { qux(); }`,
+		`if (foo) {bar();} else qux();`
 	],
 	invalid: [
 		`if (foo);`,
