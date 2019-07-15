@@ -105,7 +105,9 @@ rule('no-useless-templates', {
 rule('no-empty-if-clause', {
 	valid: [
 		`if (foo) { bar(); }`,
-		`if (foo) { a(); } else { b(); }`
+		`if (foo) { a(); } else { b(); }`,
+		`if (foo) bar();`,
+		`if (foo) bar(); else qux();`
 	],
 	invalid: [
 		`if (foo);`,
